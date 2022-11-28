@@ -6,6 +6,7 @@
       <title>Documentation - ePrimeRx Design System </title>
       <meta charset="utf-8">
       <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
       <link rel="stylesheet" href="css/style.css">
       <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
       <link rel="stylesheet" media="bogus">
@@ -28,6 +29,7 @@
                               <div><a class="pseudo button" href="#checkbox">Checkbox</a></div>
                               <div><a class="pseudo button" href="#radiobutton">Radio button</a></div>
                               <div><a class="pseudo button" href="#toggle">Toggle</a></div>
+                              <div><a class="pseudo button" href="#dropdown">Dropdown</a></div>
                               <div><a class="pseudo button" href="#dropimage">Drop image</a></div>
                               <div><a class="pseudo button" href="#grids">Grids</a></div>
                               <div><a class="pseudo button" href="#input">Input</a></div>
@@ -36,9 +38,7 @@
                               <div><a class="pseudo button" href="#nav">Nav</a></div>
                               <div><a class="pseudo button" href="#select">Select</a></div>
                               <div><a class="pseudo button" href="#stack">Stack</a></div>
-                              <div><a class="pseudo button" href="#table">Table</a></div>
                               <div><a class="pseudo button" href="#tabs">Tabs</a></div>
-                              <div><a class="pseudo button" href="#tooltip">Tooltip</a></div>
                         </div><a href="#home" tabindex="-1" class="top pseudo button">▲ Back to top ▲</a>
                   </aside>
                   <article class="full four-fifth-1000">
@@ -230,7 +230,66 @@
                         </pre>
 
 
+                        <h3 id="usage">Usage</h3>
+                        <p>This plugin, while experimental in the past, is mature now. Use a normal checkbox followed by
+                              any other
+                              element with the class <code>checkable</code>. 
+                              The element that follows the checkbox will
+                              receive the pseudo
+                              classes so it should be able to do so. We recommend a <code>&lt;span&gt;</code> or
+                              <code>&lt;label&gt;</code>.
+                              Here we use the label around them for making the <code>&lt;input&gt;</code> change state
+                              when you click on
+                              this folowing element.
+                        </p>
+                        
+                        <pre>
+                              <code>
+                              &lt;input id="checkboxdemo" type="checkbox"&gt;
+                                          &lt;label for="checkboxdemo" class="checkable"&gt;Checkbox text&lt;/label&gt;
+                              </code>
+                        </pre>
 
+                        <h3 id="javascript">JavaScript</h3>
+                        <p>You do not need javascript since we are using the native elements and not setting
+                              <code>display: none</code>
+                              purposefully. However, you can still use javascript as normal to retrieve the checked
+                              elements.
+                        </p>
+                        <p>
+                        </p>
+                        <form>
+                              <label>
+                                    <input class="tos" type="checkbox">
+                                    <span class="checkable"> &nbsp; Accept TOS</span>
+                              </label>
+                              <button>Send</button>
+                        </form>
+                        <p></p>
+                        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+                        <script>
+                              // Pure javascript
+                              document.querySelector('form').onsubmit = function (e) {
+                                    e.preventDefault();
+                                    alert(document.querySelector('.tos').checked);
+                              }
+                        </script>
+
+
+                        <pre>
+                              <code class="lang-js">// Pure javascript
+                                    document.querySelector('form').onsubmit = function(e){
+                                    e.preventDefault();
+                                    alert(document.querySelector('input.tos').checked);
+                                    }
+
+                                    // jQuery
+                                    $("form").on('submit', function(e){
+                                    e.preventDefault();
+                                    alert($('input.tos').is(':checked'));
+                                    });
+                                    </code>
+                              </pre>
 
 
 
@@ -272,104 +331,55 @@
                                     <input type="checkbox" checked>
                                     <span class="slider round"></span>
                                   </label>
-                        </div>
 
-                        <div>
-                              
                         </div>
-
 
 
                         <pre>
                               <code>
-                              &lt;label&gt;
-                                    &lt;input type='radio' name="radiodemo"&gt;
-                                    &lt;span class="checkable"&gt;Select me&lt;/span&gt;
+                              &lt;label class="switch"&gt;
+                                    &lt;input type='checkbox' name="toggle"&gt;
+                                    &lt;span class="slider round"&gt;&lt;/span&gt;
                               &lt;/label&gt;&lt;
 
-                              &lt;input id="radiodemo" checked type='radio' name="radiodemo"&gt;
-                              &lt;label for="radiodemo" class="checkable"&gt;Or me&lt;/label&gt;
+                              &lt;label class="switch"&gt;
+                                    &lt;input type='checkbox' name="toggle" checked&gt;
+                                    &lt;span class="slider round"&gt;&lt;/span&gt;
+                              &lt;/label&gt;
+
                               </code>
                         </pre>
 
 
                               
 
-                        <h2 id="select">Select</h2>
-                        <div><select>
-                                    <option>Select an option</option>
+                        <h2 id="dropdown">Dropdown</h2>
+
+                        <div>
+                              <select>
+                                    <option>Label</option>
                                     <option>Good option</option>
                                     <option>Nice option</option>
                                     <option>Cheap option</option>
                               </select>
-                        </div>
-                        <pre><code >&lt;select&gt;
-  &lt;option&gt;Select an option&lt;/option&gt;
-  &lt;option&gt;Good option&lt;/option&gt;
-  &lt;option&gt;Nice option&lt;/option&gt;
-  &lt;option&gt;Cheap option&lt;/option&gt;
-&lt;/select&gt;
-</code></pre>
+                        </div> <br>
 
 
 
 
+                      
 
-
-
-                        <h3 id="usage">Usage</h3>
-                        <p>This plugin, while experimental in the past, is mature now. Use a normal checkbox followed by
-                              any other
-                              element with the class <code>checkable</code>. The element that follows the checkbox will
-                              receive the pseudo
-                              classes so it should be able to do so. We recommend a <code>&lt;span&gt;</code> or
-                              <code>&lt;label&gt;</code>.
-                              Here we use the label around them for making the <code>&lt;input&gt;</code> change state
-                              when you click on
-                              this folowing element.
-                        </p>
                         
-                        <pre><code >&lt;input id="checkboxdemo" type="checkbox"&gt;
-                                          &lt;label for="checkboxdemo" class="checkable"&gt;Checkbox text&lt;/label&gt;
-                                          </code></pre>
-                        <h3 id="javascript">JavaScript</h3>
-                        <p>You do not need javascript since we are using the native elements and not setting
-                              <code>display: none</code>
-                              purposefully. However, you can still use javascript as normal to retrieve the checked
-                              elements.
-                        </p>
-                        <p>
-                        </p>
-                        <form>
-                              <label>
-                                    <input class="tos" type="checkbox">
-                                    <span class="checkable">Accept TOS</span>
-                              </label>
-                              <button>Send</button>
-                        </form>
-                        <p></p>
-                        <script async="" src="//www.google-analytics.com/analytics.js"></script>
-                        <script>
-                              // Pure javascript
-                              document.querySelector('form').onsubmit = function (e) {
-                                    e.preventDefault();
-                                    alert(document.querySelector('.tos').checked);
-                              }
-                        </script>
 
-
-                        <pre><code class="lang-js">// Pure javascript
-                                    document.querySelector('form').onsubmit = function(e){
-                                    e.preventDefault();
-                                    alert(document.querySelector('input.tos').checked);
-                                    }
-
-                                    // jQuery
-                                    $("form").on('submit', function(e){
-                                    e.preventDefault();
-                                    alert($('input.tos').is(':checked'));
-                                    });
-                                    </code></pre>
+                        <pre>
+                              <code>
+                              &lt;select&gt;
+                                    &lt;option&gt;Label&lt;/option&gt;
+                                    &lt;option&gt;Good option&lt;/option&gt;
+                                    &lt;option&gt;Nice option&lt;/option&gt;
+                                    &lt;option&gt;Cheap option&lt;/option&gt;
+                              &lt;/select&gt;
+                        </code></pre>
 
 
 
@@ -849,9 +859,9 @@
                         <p>An element to display some short relevant information on the side of other element</p>
                         <div>
                               <h1>header 1 <span class="label">Normal</span></h1>
-                              <h2>header 2 <span class="label success">Success</span></h2>
-                              <h3>header 3 <span class="label warning">Warning</span></h3>
-                              <h4>header 4 <span class="label error">Error</span></h4>
+                              <h2>header 2 <span class="label ">Success</span></h2>
+                              <h3>header 3 <span class="label ">Warning</span></h3>
+                              <h4>header 4 <span class="label ">Error</span></h4>
                               <p>paragraph <span class="label">Normal</span></p>
                         </div>
                         <pre><code >&lt;h1&gt;header 1 &lt;span class="label"&gt;Normal&lt;/span&gt;&lt;/h1&gt;
@@ -1039,42 +1049,7 @@ document.getElementById('modal_1').checked = false; // close modal
   &lt;/a&gt;
 &lt;/nav&gt;
 </code></pre>
-                        <h3 id="form-elements">Form elements</h3>
-                        <p>Just get anything you want inside the nav, most things should work.</p>
-                        <div>
-                              <div style="overflow: hidden;height: 250px;">
-                                    <!-- For Demo, Represents the body -->
 
-                                    <nav class="demo">
-                                          <a href="#" class="brand">Picnic CSS</a>
-
-                                          <!-- responsive-->
-                                          <input id="bmenug" type="checkbox" class="show">
-                                          <label for="bmenug" class="burger pseudo button">≡</label>
-
-                                          <div class="menu">
-                                                <input placeholder="Search plugins">
-                                          </div>
-                                    </nav>
-
-                              </div>
-                        </div>
-                        <pre><code >&lt;div style="overflow: hidden;height: 250px;"&gt; &lt;!-- For Demo, Represents the body --&gt;
-
-&lt;nav class="demo"&gt;
-  &lt;a href="#" class="brand"&gt;Picnic CSS&lt;/a&gt;
-
-  &lt;!-- responsive--&gt;
-  &lt;input id="bmenug" type="checkbox" class="show"&gt;
-  &lt;label for="bmenug" class="burger pseudo button"&gt;&amp;#8801;&lt;/label&gt;
-
-  &lt;div class="menu"&gt;
-    &lt;input placeholder="Search plugins" /&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;
-
-&lt;/div&gt;
-</code></pre>
                         <div>
                               <div style="overflow: hidden;height: 250px;">
                                     <!-- For Demo, Represents the body -->
@@ -1123,52 +1098,7 @@ document.getElementById('modal_1').checked = false; // close modal
   position: absolute;
 }
 </code></pre>
-                        <h3 id="open-nav-menu-from-left">Open nav menu from left</h3>
-                        <p>Change sass variable <code>$picnic-nav-open-left: false !default;</code> to
-                              <code>$picnic-nav-open-left: true;</code> to open it from the left:
-                        </p>
-                        <div>
-                              <div style="overflow: hidden;height: 250px;">
-                                    <!-- For Demo, Represents the body -->
-
-                                    <nav class="demo">
-                                          <a href="#" class="brand">Picnic CSS</a>
-
-                                          <!-- responsive-->
-                                          <input id="cmenug" type="checkbox" class="show">
-                                          <label for="cmenug" class="burger pseudo button">≡</label>
-
-                                          <div class="menu">
-                                                <select>
-                                                      <option>Choose an option</option>
-                                                      <option>Option 1</option>
-                                                      <option>Option 2</option>
-                                                </select>
-                                          </div>
-                                    </nav>
-
-                              </div>
-                        </div>
-                        <pre><code >&lt;div style="overflow: hidden;height: 250px;"&gt; &lt;!-- For Demo, Represents the body --&gt;
-
-&lt;nav class="demo"&gt;
-  &lt;a href="#" class="brand"&gt;Picnic CSS&lt;/a&gt;
-
-  &lt;!-- responsive--&gt;
-  &lt;input id="cmenug" type="checkbox" class="show"&gt;
-  &lt;label for="cmenug" class="burger pseudo button"&gt;&amp;#8801;&lt;/label&gt;
-
-  &lt;div class="menu"&gt;
-    &lt;select&gt;
-      &lt;option&gt;Choose an option&lt;/option&gt;
-      &lt;option&gt;Option 1&lt;/option&gt;
-      &lt;option&gt;Option 2&lt;/option&gt;
-    &lt;/select&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;
-
-&lt;/div&gt;
-</code></pre>
+                        
                       
                         <h2 id="stack">Stack</h2>
                         <p>A vertical group of different elements.</p>
@@ -1306,62 +1236,8 @@ document.getElementById('modal_1').checked = false; // close modal
   &lt;button class="stack icon-paper-plane"&gt;Send&lt;/button&gt;
 &lt;/div&gt;
 </code></pre>
-                        <h2 id="table">Table</h2>
-                        <div>
-                              <table class="primary">
-                                    <thead>
-                                          <tr>
-                                                <th>Name</th>
-                                                <th>City</th>
-                                          </tr>
-                                    </thead>
-                                    <tbody>
-                                          <tr>
-                                                <td>Francisco</td>
-                                                <td>Valencia, Spain</td>
-                                          </tr>
-                                          <tr>
-                                                <td>Eve</td>
-                                                <td>San Francisco, USA</td>
-                                          </tr>
-                                          <tr>
-                                                <td>Martin</td>
-                                                <td>New York, USA</td>
-                                          </tr>
-                                          <tr>
-                                                <td>Sarah</td>
-                                                <td>London, UK</td>
-                                          </tr>
-                                    </tbody>
-                              </table>
-                        </div>
-                        <pre><code >&lt;table class="primary"&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Name&lt;/th&gt;
-      &lt;th&gt;City&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Francisco&lt;/td&gt;
-      &lt;td&gt;Valencia, Spain&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Eve&lt;/td&gt;
-      &lt;td&gt;San Francisco, USA&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Martin&lt;/td&gt;
-      &lt;td&gt;New York, USA&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Sarah&lt;/td&gt;
-      &lt;td&gt;London, UK&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</code></pre>
+                        
+                      
                         <h2 id="tabs">Tabs</h2>
                         <blockquote>
                               <p>Original: <a
