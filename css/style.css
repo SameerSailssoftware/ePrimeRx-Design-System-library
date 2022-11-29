@@ -538,6 +538,7 @@ button,
 
 select {
     background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjMiPjxwYXRoIGQ9Im0gMCwxIDEsMiAxLC0yIHoiLz48L3N2Zz4=) no-repeat scroll 95% center/10px 15px;
+    color: #99AEBE;
     background-position: calc(100% - 15px) center;
     border: 1px solid #aaa;
     border-radius: .2em;
@@ -600,7 +601,43 @@ select {
 
 
 
+/* Dropdown CSS Starts........................ */
 
+select::-ms-expand {
+   display: none;
+}
+.select {
+   position: relative;
+   display: flex;
+   width: 18em;
+   height: 56px;
+   line-height: 3;
+   background: #5c6664;
+   overflow: hidden;
+   border-radius: .25em;
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    right: 0;
+    color: #99AEBE;
+    border: 1px solid #99AEBE;
+    height: 54px;
+    padding: 0 1em;
+    background: #ecf2f8;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+.select:hover::after {
+   color: #23b499;
+}
+
+
+/* Dropdown CSS End........................ */
 
 
 
@@ -992,7 +1029,7 @@ select {
   .select select {
       line-height: 1.5;
       margin: 0;
-      height: 2.1em;
+      height: 56px;
       padding: .3em .6em;
       border: 1px solid #aaa;
       background-color: #fff;
