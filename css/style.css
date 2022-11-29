@@ -558,7 +558,41 @@ select {
 /* Search Bar Css starts........................ */
 
 
-
+* {
+    box-sizing: border-box;
+  }
+  .example{
+    margin:auto; width:300px
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #31afe5;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 56px;
+    width: 240px;
+    background: #ffe7da;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 56px;
+    padding: 10px;
+    background: #d8f3ff;
+    color: #31afe5;
+    font-size: 17px;
+    border: 1px solid #31afe5;
+    border-left: none;
+    cursor: pointer;
+  }
 
 
 
@@ -893,19 +927,7 @@ select {
       margin-left: 1em;
       line-height: 1
   }
-  
-  .dropimage,
-  button,
-  .button,
-  [type=submit] {
-      margin: .3em 0;
-      cursor: pointer;
-      transition: all .3s;
-      border-radius: .2em;
-      height: auto;
-      vertical-align: baseline;
-      box-shadow: 0 0 rgba(17, 17, 17, 0) inset
-  }
+
   
   .dropimage:hover,
   button:hover,
@@ -4355,6 +4377,18 @@ button.error,
 .error.label,
 .error[data-tooltip]:after {
     background: #ff4136
+}
+
+.dropimage,
+button,
+.button,
+[type=submit] {
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: .2em;
+    height: auto;
+    vertical-align: baseline;
+    box-shadow: 0 0 rgba(17, 17, 17, 0) inset
 }
 
 
