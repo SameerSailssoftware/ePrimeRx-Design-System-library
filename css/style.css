@@ -563,7 +563,9 @@ select {
     box-sizing: border-box;
   }
   .example{
-    margin:auto; width:300px
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width:300px
   }
   
   form.example input[type=text] {
