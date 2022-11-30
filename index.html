@@ -12,6 +12,25 @@
       <link rel="stylesheet" media="bogus">
 
 
+
+
+
+
+        <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js" integrity="sha256-VBLiveTKyUZMEzJd6z2mhfxIqz3ZATCuVMawPZGzIfA=" crossorigin="anonymous"></script>
+
+    <!-- Tempus Dominus Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha256-XPTBwC3SBoWHSmKasAk01c08M6sIA5gF5+sRxqak2Qs=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha256-z0oKYg6xiLq3yJGsp/LsY9XykbweQlHl42jHv2XTBz4=" crossorigin="anonymous"></script>
+
+
+
 </head>
 
 <body>
@@ -30,6 +49,7 @@
                               <div><a class="pseudo button" href="#radiobutton">Radio button</a></div>
                               <div><a class="pseudo button" href="#toggle">Toggle</a></div>
                               <div><a class="pseudo button" href="#dropdown">Dropdown</a></div>
+                              <div><a class="pseudo button" href="#datepicker">Datepicker</a></div>
                               <div><a class="pseudo button" href="#dropimage">Drop image</a></div>
                               <div><a class="pseudo button" href="#grids">Grids</a></div>
                               <div><a class="pseudo button" href="#input">Input</a></div>
@@ -382,9 +402,11 @@
                                     </select>
                               </div>
 
+                        </div> <br>
 
-                        </div>
-                        
+
+                        <br>
+
 
                         <pre>
                               <code>
@@ -413,6 +435,40 @@
 
                             </code>
                   </pre>
+
+
+
+                  <h2 id="datepicker">DatePicker</h2>
+
+                  <div>
+
+                        <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" placeholder="11/30/2022 11:33 AM" data-target="#datetimepicker1"/>
+                              <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
+                              </div>
+                        </div>
+                        
+                  </div> <br>
+
+
+                                    <pre>
+                                          <code>
+                                    &lt;div class="input-group date" id="datetimepicker1" data-target-input="nearest"&gt;
+                                          &lt;input type="text" class="form-control datetimepicker-input" placeholder="11/30/2022 11:33 AM"
+                                          data-target="#datetimepicker1"/&gt;
+                                           &lt;div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker"&gt;
+                                           &lt;div class="input-group-text"&gt;&lt;i class="fa fa-calendar-alt"&gt;&lt;/i&gt;&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    </code>
+                              </pre>
+
+
+
+
+
 
 
 
