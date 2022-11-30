@@ -671,6 +671,24 @@ select::-ms-expand {
 
 /* DatePicker CSS End......................... */
 
+/* Input field CSS Starts............... */
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    width: 300px !important;
+    height: 120px !important;
+}
+
+/* Input field CSS End............... */
 
 
 /* Common CSS End.................................................. */
