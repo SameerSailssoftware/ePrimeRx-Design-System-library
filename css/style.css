@@ -7,6 +7,34 @@
       display: flex;
 }
 
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    width: 10rem !important;
+    height: 10rem !important;
+    color: white;
+    text-align: center !important;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 4.25rem !important;
+}
+
+
+/* Color System CSS Starts.......................................... */
+
 .blue{
     color: #31AFE5;
 }
@@ -18,6 +46,44 @@
 .grey{
     color: #5D636B;
 }
+
+.bg-blue{
+    background-color: #31afe5;
+}
+
+.bg-orange{
+    background-color: #F39C12;
+}
+
+.bg-grey{
+    background-color: #5D636B;
+}
+
+
+.bg-vavyblue{
+    background-color: #5E5CCB;
+}
+
+.bg-red{
+    background-color: #F85B04;
+}
+
+.bg-turquoise{
+    background-color: #11D6B2;
+}
+
+.bg-yellow{
+    background-color: #FFC300;
+}
+
+.bg-green{
+    background-color: #21BA67;
+}
+
+
+
+/* Color System CSS End.......................................... */
+
 
 /* Font Family CSS Starts...................... */
 
