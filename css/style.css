@@ -11,7 +11,7 @@
 .card {
     position: relative;
     display: -ms-flexbox;
-    width: 10rem !important;
+    width: 16rem !important;
     height: 10rem !important;
     color: white;
     text-align: center !important;
@@ -79,6 +79,47 @@
 .bg-green{
     background-color: #21BA67;
 }
+
+/* Tertiary Colors.......... */
+
+.bg-grey1{
+    background-color: #D4E2EE;
+    color: #5D636B;
+}
+
+.bg-lightgreen{
+    background-color: #D0FFE5;
+    color: #5D636B;
+}
+
+.bg-lightblue{
+    background-color: #D1F1FF;
+    color: #5D636B;
+}
+
+.bg-grey2{
+    background-color: #D0DFEA;
+    color: #5D636B;
+}
+
+.bg-lightred{
+    background-color: #FFE7DA;
+    color: #5D636B;
+}
+
+.bg-grey3{
+    background-color: #C3D0DB;
+    color: #5D636B;
+}
+.bg-grey4{
+    background-color: #ECF4FA;
+    color: #5D636B;
+}
+
+
+
+
+
 
 
 
@@ -755,6 +796,43 @@ textarea {
 }
 
 /* Input field CSS End............... */
+
+
+
+/* Pagination CSS Starts................. */
+
+.page-item {
+    background-color: #f3faff !important;
+    border: none !important;
+    border-radius: 5px !important;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    border-radius: 50% !important;
+    color: #fff !important;
+    background-color: #31afe5 !important;
+    border-color: none !important;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #5d636b !important;
+    background-color: #fff !important;
+    border: none !important;
+}
+
+.page-link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    border-radius: 50% !important;
+}
+
+
+/* Pagination CSS End................. */
 
 
 /* Common CSS End.................................................. */

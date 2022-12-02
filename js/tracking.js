@@ -7,14 +7,7 @@
       ga('send', 'pageview');
 
 
-      $(function() {
-            console.log( "ready!" );
-            $('#page').Pagination({
-                  size: 87,
-                  pageShow: 5,
-                  page: 1,
-                  limit: 10,
-                }, function(obj){
-                        $('#info').html('Current page: ' + obj.page);
-                });
-      });
+  
+
+
+
