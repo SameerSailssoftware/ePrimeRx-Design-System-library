@@ -52,8 +52,6 @@
                               <div><a class="pseudo button" href="#grids">Grids</a></div>
                               <div><a class="pseudo button" href="#modal">Modal</a></div>
                               <div><a class="pseudo button" href="#nav">Nav</a></div>
-                              <div><a class="pseudo button" href="#select">Select</a></div>
-                              <div><a class="pseudo button" href="#stack">Stack</a></div>
                               <div><a class="pseudo button" href="#tabs">Tabs</a></div>
                         </div><a href="#home" tabindex="-1" class="top pseudo button">▲ Back to top ▲</a>
                   </aside>
@@ -169,10 +167,6 @@
                         </div><br>
 
                     
-
-
-
-
 
                         <h2 id="fonts">Fonts</h2>
                         <p>An element to display some short relevant information on the side of other element</p>
@@ -1273,7 +1267,7 @@ document.getElementById('modal_1').checked = false; // close modal
 
                                     <nav class="demo">
                                           <a href="#" class="brand">
-                                                <img class="logo" src="/img/basket.png">
+                                                <img class="logo" src="icons/clock.png">
                                                 <span>Picnic CSS</span>
                                           </a>
 
@@ -1295,7 +1289,7 @@ document.getElementById('modal_1').checked = false; // close modal
 
                                     &lt;nav class="demo"&gt;
                                     &lt;a href="#" class="brand"&gt;
-                                    &lt;img class="logo" src="/img/basket.png" /&gt;
+                                    &lt;img class="logo" src="icons/clock.png" /&gt;
                                     &lt;span&gt;Picnic CSS&lt;/span&gt;
                                     &lt;/a&gt;
 
@@ -1346,185 +1340,7 @@ document.getElementById('modal_1').checked = false; // close modal
   height: 3em;
 }
 </code></pre>
-                        <div>
-                              <nav class="demo imponent">
-                                    <a href="#" class="brand">
-                                          <img class="logo" src="/img/basket.png">
-                                          <span>Picnic CSS</span>
-                                    </a>
-                              </nav>
-                        </div>
-                        <pre><code >&lt;nav class="demo imponent"&gt;
-                              &lt;a href="#" class="brand"&gt;
-                              &lt;img class="logo" src="/img/basket.png" /&gt;
-                              &lt;span&gt;Picnic CSS&lt;/span&gt;
-                              &lt;/a&gt;
-                              &lt;/nav&gt;
-                              </code></pre>
-
-                        <div>
-                              <div style="overflow: hidden;height: 250px;">
-                                    <!-- For Demo, Represents the body -->
-
-                                    <nav class="demo">
-                                          <a href="#" class="brand">Picnic CSS</a>
-
-                                          <!-- responsive-->
-                                          <input id="cmenug" type="checkbox" class="show">
-                                          <label for="cmenug" class="burger pseudo button">≡</label>
-
-                                          <div class="menu">
-                                                <select>
-                                                      <option>Choose an option</option>
-                                                      <option>Option 1</option>
-                                                      <option>Option 2</option>
-                                                </select>
-                                          </div>
-                                    </nav>
-
-                              </div>
-                        </div><br>
-                        <pre><code>
-                              &lt;div style="overflow: hidden;height: 250px;"&gt; &lt;!-- For Demo, Represents the body --&gt;
-
-                                    &lt;nav class="demo"&gt;
-                                    &lt;a href="#" class="brand"&gt;Picnic CSS&lt;/a&gt;
-
-                                    &lt;!-- responsive--&gt;
-                                    &lt;input id="cmenug" type="checkbox" class="show"&gt;
-                                    &lt;label for="cmenug" class="burger pseudo button"&gt;&amp;#8801;&lt;/label&gt;
-
-                                    &lt;div class="menu"&gt;
-                                    &lt;select&gt;
-                                          &lt;option&gt;Choose an option&lt;/option&gt;
-                                          &lt;option&gt;Option 1&lt;/option&gt;
-                                          &lt;option&gt;Option 2&lt;/option&gt;
-                                    &lt;/select&gt;
-                                    &lt;/div&gt;
-                                    &lt;/nav&gt;
-
-                                    &lt;/div&gt;
-                                    </code></pre>
-                        <h3 id="fixed-position">Fixed position</h3>
-                        <p>To set it on the top of the page instead of scrolling with the page, just do:</p>
-                        <pre><code>nav {
-  position: absolute;
-}
-</code></pre>
-                        
-                      
-                        <h2 id="stack">Stack</h2>
-                        <p>A vertical group of different elements.</p>
-                        <div><span class="button stack icon-picture">Home</span>
-                              <span class="button stack icon-puzzle">Plugins</span>
-                              <span class="button stack icon-file-code">Documentation</span>
-                              <span class="button stack icon-help-circled">Test</span>
-                        </div> <br>
-                        <pre><code >
-                              &lt;span class="button stack icon-picture"&gt;Home&lt;/span&gt;
-                                    &lt;span class="button stack icon-puzzle"&gt;Plugins&lt;/span&gt;
-                                    &lt;span class="button stack icon-file-code"&gt;Documentation&lt;/span&gt;
-                                    &lt;span class="button stack icon-help-circled"&gt;Test&lt;/span&gt;
-</code></pre>
-                        <p>They can also toggle:</p>
-                        <div>
-                              <div>
-                                    <label class="stack">
-                                          <input name="stack" type="radio">
-                                          <span class="button toggle">
-                                                <span class="icon-picture"></span> Home
-                                          </span>
-                                    </label>
-                                    <label class="stack">
-                                          <input name="stack" type="radio">
-                                          <span class="button toggle">
-                                                <span class="icon-puzzle"></span> Plugins
-                                          </span>
-                                    </label>
-                                    <label class="stack">
-                                          <input name="stack" type="radio">
-                                          <span class="button toggle">
-                                                <span class="icon-file-code"></span> Documentation
-                                          </span>
-                                    </label>
-                                    <label class="stack">
-                                          <input name="stack" type="radio">
-                                          <span class="button toggle">
-                                                <span class="icon-help-circled"></span> Test
-                                          </span>
-                                    </label>
-                              </div>
-                        </div><br>
-                        <pre><code >
-                              &lt;div&gt;
-                              &lt;label class="stack"&gt;
-                              &lt;input name="stack" type="radio"&gt;
-                              &lt;span class="button toggle"&gt;
-                                    &lt;span class="icon-picture"&gt;&lt;/span&gt; Home
-                              &lt;/span&gt;
-                              &lt;/label&gt;
-                              &lt;label class="stack"&gt;
-                              &lt;input name="stack" type="radio"&gt;
-                              &lt;span class="button toggle"&gt;
-                                    &lt;span class="icon-puzzle"&gt;&lt;/span&gt; Plugins
-                              &lt;/span&gt;
-                              &lt;/label&gt;
-                              &lt;label class="stack"&gt;
-                              &lt;input name="stack" type="radio"&gt;
-                              &lt;span class="button toggle"&gt;
-                                    &lt;span class="icon-file-code"&gt;&lt;/span&gt; Documentation
-                              &lt;/span&gt;
-                              &lt;/label&gt;
-                              &lt;label class="stack"&gt;
-                              &lt;input name="stack" type="radio"&gt;
-                              &lt;span class="button toggle"&gt;
-                                    &lt;span class="icon-help-circled"&gt;&lt;/span&gt; Test
-                              &lt;/span&gt;
-                              &lt;/label&gt;
-                              &lt;/div&gt;
-                              </code></pre>
-                        <p>Stack different kind of elements</p>
-                        <div>
-                              <div class="third">
-                                    <img class="stack" src="/img/forest.jpg">
-                                    <a class="button stack">Full size</a>
-                              </div>
-                        </div> <br>
-                        <pre><code >
-                              &lt;div class="third"&gt;
-                              &lt;img class="stack" src="/img/forest.jpg"&gt;
-                              &lt;a class="button stack"&gt;Full size&lt;/a&gt;
-                              &lt;/div&gt;
-                              </code></pre>
-                        <p>A small form</p>
-                        <div>
-                              <div class="third">
-                                    <input class="stack" placeholder="Name">
-                                    <input class="stack" placeholder="Email">
-                                    <button class="stack icon-paper-plane">
-                                          Send
-                                    </button>
-                              </div>
-                        </div> <br>
-                        <pre><code >
-                              &lt;div class="third"&gt;
-                              &lt;input class="stack" placeholder="Name" /&gt;
-                              &lt;input class="stack" placeholder="Email" /&gt;
-                              &lt;button class="stack icon-paper-plane"&gt;
-                                    Send
-                              &lt;/button&gt;
-                              &lt;/div&gt;
-                              </code></pre>
-                        <p>Pseudo buttons:</p>
-                        <div><a class="stack pseudo button">First</a>
-                              <a class="stack pseudo button">Second</a>
-                              <a class="stack pseudo button">Third</a>
-                        </div> <br>
-                        <pre><code >&lt;a class="stack pseudo button"&gt;First&lt;/a&gt;
-                        &lt;a class="stack pseudo button"&gt;Second&lt;/a&gt;
-                        &lt;a class="stack pseudo button"&gt;Third&lt;/a&gt;
-                        </code></pre>
-                        
+                       
                         
                       
                         <h2 id="tabs">Tabs</h2>
@@ -1546,15 +1362,15 @@ document.getElementById('modal_1').checked = false; // close modal
                                     <label class="pseudo button toggle" for="tab-3">Balloon</label>
                                     <div class="row">
                                           <div>
-                                                <img src="img/forest.jpg">
+                                                <img src="icons/clock.png">
                                           </div>
 
                                           <div>
-                                                <img src="img/lake.jpg">
+                                                <img src="icons/clock.png">
                                           </div>
 
                                           <div>
-                                                <img src="img/balloon.jpg">
+                                                <img src="icons/clock.png">
                                           </div>
                                     </div>
                               </div>
@@ -1569,15 +1385,15 @@ document.getElementById('modal_1').checked = false; // close modal
                               &lt;label class="pseudo button toggle" for="tab-3"&gt;Balloon&lt;/label&gt;
                               &lt;div class="row"&gt;
                               &lt;div&gt;
-                                    &lt;img src="img/forest.jpg"&gt;
+                                    &lt;img src="icons/clock.png"&gt;
                               &lt;/div&gt;
 
                               &lt;div&gt;
-                                    &lt;img src="img/lake.jpg"&gt;
+                                    &lt;img src="icons/clock.png"&gt;
                               &lt;/div&gt;
 
                               &lt;div&gt;
-                                    &lt;img src="img/balloon.jpg"&gt;
+                                    &lt;img src="icons/clock.png"&gt;
                               &lt;/div&gt;
                               &lt;/div&gt;
                               &lt;/div&gt;
