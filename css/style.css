@@ -36,15 +36,19 @@
 /* Color System CSS Starts.......................................... */
 
 .blue{
-    color: #31AFE5;
+    color: #31AFE5 !important;
 }
 
 .orange{
-    color: #F39C12;
+    color: #F39C12 !important;
 }
 
 .grey{
-    color: #5D636B;
+    color: #5D636B !important;
+}
+
+.dark-blue{
+    color: #0056b3 !important;
 }
 
 .bg-blue{
@@ -956,6 +960,14 @@ textarea {
       font-weight: normal;
       font-style: normal
   }
+
+  nav.demo {
+    position: relative;
+    z-index: 9;
+    padding: 0 .6em;
+    height: 4rem;
+    border-radius: 5px;
+}
   
   [class^=icon-]:before,
   [class*=" icon-"]:before {
@@ -963,6 +975,7 @@ textarea {
       font-style: normal;
       font-weight: normal;
       speak: none;
+      color: #0056b3;
       display: inline-block;
       text-decoration: inherit;
       width: 1em;
@@ -3658,11 +3671,12 @@ textarea {
     position: fixed;
     top: 0;
     left: 0;
+    color: white;
     right: 0;
     display: flex;
     height: 3em;
     padding: 0 .6em;
-    background: #fff;
+    background: #31afe5;
     box-shadow: 0 0 0.2em rgb(170 170 170 / 20%);
     z-index: 10000;
     transition: all .3s;
