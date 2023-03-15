@@ -132,9 +132,9 @@
 
 /* Font Family CSS Starts...................... */
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, p{
 
-    font-family: 'Roboto';
+    font-family: Roboto !important;
     font-style: normal;
     color: #5d636b;
     font-weight: 600;
@@ -330,15 +330,16 @@ button,
 
     .btn1{
         background-color: #ffffff;
-        height: 38px;
+        width: 111px;
+        height: 40px;
         border: 1px solid transparent;
        border-color: #31AFE5;
         text-transform: uppercase;
-        font-weight: 550;
+        font-weight: 500;
         border-color: #31AFE5;
         align-self: center;
         font-size: 13px;
-        font-family: sans-serif !important;
+        font-family: Roboto !important;
         color: #31AFE5;
         border-radius: 5px;
     }
@@ -346,10 +347,10 @@ button,
     #btn1{
         background-color: #31AFE5 !important;
         color: #ffffff !important;
-        padding: 4px 4px;
+        padding: 5px 5px;
         border-radius: 17%;
         margin-right: 1px;
-        font-family: sans-serif !important;
+        font-family: Roboto !important;
         height: 38px;
         align-self: center;
         font-size: 13px;
@@ -359,14 +360,15 @@ button,
 
     .btn2{
         background-color: #31afe5;
-        height: 38px;
+        width: 111px;
+        height: 40px;
         border-width: 1px;
         text-transform: uppercase;
-        font-weight: 550;
+        font-weight: 500;
         border-color: #0000009e;
         align-self: center;
         font-size: 13px;
-        font-family: sans-serif !important;
+        font-family: Roboto !important;
         color: #ffffff;
         border-radius: 5px;
     }
@@ -374,10 +376,10 @@ button,
     #btn2{
         background-color: #ffffff !important;
         color: #31afe5 !important;
-        padding: 4px 4px;
+        padding: 5px 5px;
         border-radius: 17%;
         margin-right: 1px;
-        font-family: sans-serif !important;
+        font-family: Roboto !important;
         height: 38px;
         align-self: center;
         font-size: 13px;
@@ -388,14 +390,15 @@ button,
 
     .btn3{
         background-color: #0979B8;
-        height: 38px;
+        width: 111px;
+        height: 40px;
         border-width: 1px;
         text-transform: uppercase;
-        font-weight: 550;
+        font-weight: 500;
         border-color: #0000009e;
         align-self: center;
         font-size: 13px;
-        font-family: sans-serif !important;
+        font-family: Roboto !important;
         color: #ffffff;
         border-radius: 5px;
     }
@@ -403,10 +406,10 @@ button,
     #btn3{
         background-color: #ffffff !important;
         color: #0979B8 !important;
-        padding: 4px 4px;
+        padding: 5px 5px;
         border-radius: 17%;
         margin-right: 1px;
-        font-family: sans-serif !important;
+        font-family: Roboto !important;
         height: 38px;
         align-self: center;
         font-size: 13px;
@@ -416,13 +419,14 @@ button,
 
     .btn4{
         background-color: #ECF4FA;
-        height: 38px;
+        width: 111px;
+        height: 40px;
         border-width: 1px;
         text-transform: uppercase;
-        font-weight: 550;
+        font-weight: 500;
         align-self: center;
         font-size: 13px;
-        font-family: sans-serif !important;
+        font-family: Roboto !important;
         color: #C3D0DB;
         border-radius: 5px;
     }
@@ -430,10 +434,10 @@ button,
     #btn4{
         background-color: #C3D0DB !important;
         color: #ffffff !important;
-        padding: 4px 4px;
+        padding: 5px 5px;
         border-radius: 17%;
         margin-right: 1px;
-        font-family: sans-serif !important;
+        font-family: Roboto !important;
         height: 38px;
         align-self: center;
         font-size: 13px;
@@ -485,7 +489,7 @@ button,
     font-size: 23px;
     line-height: 1em;
     color: transparent;
-    font-family: sans;
+    font-family: Roboto !important;
     text-align: center;
     box-sizing: border-box;
     width: 24px;
@@ -654,7 +658,7 @@ select {
     border-radius: .2em;
     cursor: pointer;
     width: 300px;
-    height: 56px;
+    height: 45px;
     box-sizing: border-box;
     padding: .3em .45em;
     transition: all .3s;
@@ -687,7 +691,7 @@ select {
     border-bottom-left-radius: 5px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    height: 56px;
+    height: 45px;
     width: 240px;
     background: #ffe7da;
   }
@@ -697,7 +701,9 @@ select {
     width: 20%;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    height: 56px;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    height: 45px;
     padding: 10px;
     background: #d8f3ff;
     color: #31afe5;
@@ -724,7 +730,7 @@ select::-ms-expand {
    position: relative;
    display: flex;
    width: 18em;
-   height: 56px;
+   height: 45px;
    line-height: 3;
    background: #5c6664;
    overflow: hidden;
@@ -739,7 +745,7 @@ select::-ms-expand {
     right: 0;
     color: #99AEBE;
     border: 1px solid #99AEBE;
-    height: 56px;
+    height: 45px;
     padding: 0 1em;
     background: #ecf2f8;
     cursor: pointer;
@@ -764,14 +770,14 @@ select::-ms-expand {
     flex-wrap: wrap;
     -ms-flex-align: stretch;
     align-items: stretch;
-    height: 56px;
+    height: 45px;
     width: 300px !important;
 }
 
 .input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    height: 56px;
+    height: 45px;
 }
 
 .fa-calendar-alt:before, .fa-calendar-days:before {
@@ -925,7 +931,7 @@ textarea {
   }
   
   html {
-      font-family: sans-serif;
+      font-family: Roboto;
       -ms-text-size-adjust: 100%;
       -webkit-text-size-adjust: 100%
   }
@@ -1092,7 +1098,7 @@ textarea {
   
   html,
   body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, Roboto;
       box-sizing: border-box;
       height: 100%
   }
@@ -1235,7 +1241,7 @@ textarea {
   .select select {
       line-height: 1.5;
       margin: 0;
-      height: 56px;
+      height: 45px;
       padding: .3em .6em;
       border: 1px solid #99AEBE;
       background-color: #fff;
@@ -4610,6 +4616,8 @@ button.warning,
 .warning[data-tooltip]:after {
     background: #1b8ab9;
     font-weight: 600;
+    width: 111px;
+    height: 40px;
     border-radius: 5px;
     color: #FFFFFF;
     font-size: 13px;
